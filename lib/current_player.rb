@@ -8,6 +8,11 @@ def turn_count(board)
   counter
 end
 
-def current_player
-
+def current_player(board)
+  num_turns = turn_count(board)
+  if (num_turns % 2 == 0)
+    "X"
+  else
+    "O"
+  end
 end
